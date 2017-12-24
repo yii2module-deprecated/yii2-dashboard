@@ -4,7 +4,7 @@
  * @var $logs array
  */
 
-$this->title = t('dashboard/main', 'title');
+$this->title = Yii::t('dashboard/main', 'title');
 
 ?>
 
@@ -12,13 +12,13 @@ $this->title = t('dashboard/main', 'title');
 	
 	<?php if($logs) { ?>
         <div class="alert alert-warning">
-			<?= t('dashboard/main', 'has_logs {link}', ['link' => 'logreader']) ?>
+	        <?= Yii::t('dashboard/main', 'has_logs {link}', ['link' => 'logreader']) ?>
         </div>
 	<?php } ?>
 	<div class="jumbotron">
-		<h1><?= t('dashboard/main', 'hello') ?></h1>
+		<h1><?= Yii::t('dashboard/main', 'hello') ?></h1>
 
-		<p class="lead"><?= t('this/main', 'text') ?></p>
+		<p class="lead"><?= Yii::t('this/main', 'text') ?></p>
 		
 	</div>
 
