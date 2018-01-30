@@ -18,7 +18,7 @@ $this->title = Yii::t('dashboard/main', 'title');
 	<div class="jumbotron">
 		<h1><?= Yii::t('dashboard/main', 'hello') ?></h1>
 
-		<p class="lead"><?= Yii::t('this/main', 'text') ?></p>
+		<p class="lead"><?= Yii::t('dashboard/main', 'text') ?></p>
 		
 	</div>
 
