@@ -2,16 +2,16 @@
 
 /* @var $this yii\web\View */
 
-$this->title = Yii::t('welcome/main', 'title');
+$this->title = Yii::t('dashboard/main', 'title');
 
 ?>
 
 <div class="welcome-index">
 
 	<div class="jumbotron">
-		<h1><?= Yii::t('welcome/main', 'hello') ?></h1>
+		<h1><?= Yii::t('dashboard/main', 'hello') ?></h1>
 
-		<p class="lead"><?= Yii::t('welcome/main', 'text') ?></p>
+		<p class="lead"><?= Yii::t('dashboard/main', 'text') ?></p>
 	</div>
 
 </div>
