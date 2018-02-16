@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2module\dashboard\api\helpers;
+namespace yii2module\dashboard\domain\helpers;
 
 use Yii;
 use yii\web\UrlRule;
@@ -24,6 +24,7 @@ class RouteHelper
         }
         $list = array_unique($list);
         $list = array_values($list);
+        sort($list);
         return $list;
     }
 	
