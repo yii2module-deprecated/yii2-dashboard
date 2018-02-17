@@ -29,7 +29,7 @@ class RouteHelper
         $collection = Yii::$app->db->createCommand('
 SELECT endpoint, method, request
 FROM rest 
-WHERE  (module_id = "rest-'.API_VERSION_STRING.'" AND favorited_at > 0)
+WHERE  (module_id = \'rest-'.API_VERSION_STRING.'\' AND favorited_at > 0)
 ORDER BY endpoint')->queryAll();
         $list = [];
         foreach ($collection as $favorite) {
