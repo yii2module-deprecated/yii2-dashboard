@@ -9,6 +9,4 @@ namespace yii2module\dashboard\web;
  */
 class Module extends \yii\base\Module {
 
-	public static $langDir = '@yii2module/dashboard/web/messages';
-
 }
