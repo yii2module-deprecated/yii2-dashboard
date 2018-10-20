@@ -2,6 +2,7 @@
 
 namespace yii2module\dashboard\admin;
 use yii2lab\applicationTemplate\common\enums\ApplicationPermissionEnum;
+use yii2lab\domain\helpers\DomainHelper;
 use yii2lab\extension\web\helpers\Behavior;
 
 /**
@@ -19,5 +20,12 @@ class Module extends \yii\base\Module {
             'access' => Behavior::access(ApplicationPermissionEnum::BACKEND_ALL),
         ];
     }
+	
+	public function init() {
+		DomainHelper::forgeDomains([
+			'dashboard' => 'yii2module\dashboard\domain\Domain',
+		]);
+		parent::init();
+	}
 
 }
